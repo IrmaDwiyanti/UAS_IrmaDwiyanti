@@ -1,1 +1,84 @@
-# UAS_IrmaDwiyanti
+# Ujian Akhir Semester 
+<br>Mata Kuliah 	: Dasar Pemrograman
+<br> Nama		: Irma Dwiyanti
+<br>NIM		:	1227050059
+<br>Jurusan		:[Teknik Informatika](http://if.uinsgd.ac.id/) [UIN Sunan Gunung Djati Bandung](https://uinsgd.ac.id/) 
+
+## 1. Transpose matriks adalah matriks baru yang diperoleh dengan cara menukar elemen-elemen baris menjadi elemen kolom atau sebaliknya. Sementara pengertian matriks itu sendiri adalah susunan bilangan yang terdiri atas baris dan kolom dan ditulis dalam kurung ().
+
+## Source Code
+#include <iostream>
+using namespace std;
+
+int main() {
+   int a[10][10], transpose[10][10], row, column, i, j;
+
+   
+   cout<<"Input jumlah baris: "; cin>>row;
+    cout<<"Input jumlah kolom: "; cin>>column;
+    cout << endl;
+   
+
+   cout << "\nMasukkan angka: " << endl;
+
+   
+   for (int i = 0; i < row; ++i) {
+      for (int j = 0; j < column; ++j) {
+         cout << "Masukkan element " << i + 1 <<","<< j + 1 << ": ";
+         cin >> a[i][j];
+      }
+   }
+
+   
+   cout << "\nHasil Transpose: " << endl;
+   for (int i = 0; i < row; ++i) {
+      for (int j = 0; j < column; ++j) {
+         cout << " " << a[i][j];
+         if (j == column - 1)
+            cout << endl << endl;
+      }
+   }
+
+  
+   for (int i = 0; i < row; ++i)
+      for (int j = 0; j < column; ++j) {
+         transpose[j][i] = a[i][j];
+      }
+
+   
+   cout << "\nAwal Tranpose: " << endl;
+   for (int i = 0; i < column; ++i)
+      for (int j = 0; j < row; ++j) {
+         cout << " " << transpose[i][j];
+         if (j == row - 1)
+            cout << endl << endl;
+      }
+
+   return 0;
+}
+
+## Output
+ Input jumlah baris: 3
+Input jumlah kolom: 2
+
+
+Masukkan angka:
+Masukkan element 1,1: 12
+Masukkan element 1,2: 6
+Masukkan element 2,1: 3
+Masukkan element 2,2: 12
+Masukkan element 3,1: 3
+Masukkan element 3,2: 5
+
+Hasil Transpose:
+ 12 6
+
+ 3 12
+
+ 3 5
+
+
+Awal Tranpose:
+ 12 3 3
+
+ 6 12 5
