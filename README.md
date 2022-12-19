@@ -6,6 +6,7 @@
 
 ## 1. Transpose matriks adalah matriks baru yang diperoleh dengan cara menukar elemen-elemen baris menjadi elemen kolom atau sebaliknya. Sementara pengertian matriks itu sendiri adalah susunan bilangan yang terdiri atas baris dan kolom dan ditulis dalam kurung ().
 
+```
 ## Source Code
 #include <iostream>
 using namespace std;
@@ -56,29 +57,10 @@ int main() {
 
    return 0;
 }
+```
 
 ## Output
- Input jumlah baris: 3
-Input jumlah kolom: 2
+
+![Screenshot (64)](https://user-images.githubusercontent.com/120999558/208385256-f1430dd3-0836-4314-95c6-1908a48c3863.png)
 
 
-Masukkan angka:
-Masukkan element 1,1: 12
-Masukkan element 1,2: 6
-Masukkan element 2,1: 3
-Masukkan element 2,2: 12
-Masukkan element 3,1: 3
-Masukkan element 3,2: 5
-
-Hasil Transpose:
- 12 6
-
- 3 12
-
- 3 5
-
-
-Awal Tranpose:
- 12 3 3
-
- 6 12 5
