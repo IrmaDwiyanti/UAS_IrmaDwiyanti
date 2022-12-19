@@ -59,8 +59,6 @@ int main() {
 }
 ```
 
-## Output
-
-![Screenshot (64)](https://user-images.githubusercontent.com/120999558/208385256-f1430dd3-0836-4314-95c6-1908a48c3863.png)
+## Output![Screenshot (67)](https://user-images.githubusercontent.com/120999558/208386329-d7e8251d-c9df-480a-9793-545cb62d59f1.png)
 
 
